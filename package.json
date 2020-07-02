@@ -7,7 +7,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "lerna run start --stream --parallel",
+    "start:deposit": "lerna run --scope @cashier/deposit start"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "typescript": "^3.9.5"
   }
 }
